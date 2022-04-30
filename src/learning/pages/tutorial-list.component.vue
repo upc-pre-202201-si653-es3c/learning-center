@@ -45,7 +45,7 @@
             <pv-tag v-else severity="info">{{ slotProps.data.status}}</pv-tag>
           </template>
         </pv-column>
-        <pv-column :exportable="falase" style="min-width: 8rem">
+        <pv-column :exportable="false" style="min-width: 8rem">
           <template #body="slotProps">
             <pv-button icon="pi pi-pencil" class="p-button-text p-button-rounded" @click="editTutorial(slotProps.data)"/>
             <pv-button icon="pi pi-trash" class="p-button-text p-button-rounded" @click="confirmDeleteTutorial(slotProps.data)"/>
