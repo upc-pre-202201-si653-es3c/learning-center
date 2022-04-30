@@ -3,14 +3,38 @@
     {
       "id": 1,
       "title": "The Vue Tutorial",
-      "description": "The best tips and tutorials for Vue",
+      "description": "The best tips and tutorials for Vue.",
       "published": false
     },
     {
       "id": 2,
-      "title": "Amazing Microsoft .NET",
-      "description": "Weekly tutorials about .NET and ASP.NET Core",
+      "title": "Amazing Microsoft .NET Core",
+      "description": "Weekly tutorials about .NET Core and ASP.NET Core.",
       "published": false
+    },
+    {
+      "id": 3,
+      "title": "JavaScript for All",
+      "description": "Tips and tricks about JavaScript from scratch",
+      "published": true
+    },
+    {
+      "id": 4,
+      "title": "Vue Unleashed",
+      "description": "Vue at its best",
+      "published": true
+    },
+    {
+      "id": 5,
+      "title": "Another Tutorial",
+      "description": "Great addition",
+      "published": false
+    },
+    {
+      "id": 6,
+      "title": "The last tutorial",
+      "description": "Never seen before",
+      "published": true
     }
   ],
   "instructors": [

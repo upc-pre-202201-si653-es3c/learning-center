@@ -84,6 +84,29 @@
             <pv-button :label="'Save'.toUpperCase()" icon="pi pi-check" class="p-button-text" @click="saveTutorial" />
           </template>
         </pv-dialog>
+
+        <pv-dialog v-model:visible="deleteTutorialDialog" :style="{ width: '450px' }" header="Confirm" :modal="true">
+          <div class="confirmation-content">
+            <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem" />
+            <span v-if="tutorial">Are you sure you want to delete <b>{{ tutorial.title }}</b>?</span>
+          </div>
+          <template #footer>
+            <pv-button :label="'No'.toUpperCase()" icon="pi pi-times" class="p-button-text" @click="deleteTutorialDialog = false" />
+            <pv-button :label="'Yes'.toUpperCase()" icon="pi pi-check" class="p-button-text" @click="deleteTutorial" />
+          </template>
+        </pv-dialog>
+
+        <pv-dialog v-model:visible="deleteTutorialsDialog" :style="{ width: '450px' }" header="Confirm" :modal="true">
+          <div class="confirmation-content">
+            <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem" />
+            <span v-if="tutorial">Are you sure you want to delete the selected tutorials?</span>
+          </div>
+          <template #footer>
+            <pv-button :label="'No'.toUpperCase()" icon="pi pi-times" class="p-button-text" @click="deleteTutorialsDialog = false" />
+            <pv-button :label="'Yes'.toUpperCase()" icon="pi pi-check" class="p-button-text" @click="deleteSelectedTutorials" />
+          </template>
+        </pv-dialog>
+
       </pv-data-table>
 
     </div>
@@ -193,7 +216,7 @@ export default {
       console.log(tutorial);
       this.tutorial = {...tutorial};
       console.log(this.tutorial);
-      this.deleteTutorialDialog = true;
+      this.tutorialDialog = true;
     },
     confirmDeleteTutorial(tutorial) {
       this.tutorial = tutorial;
