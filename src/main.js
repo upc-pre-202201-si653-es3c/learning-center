@@ -14,6 +14,12 @@ import Toolbar from "primevue/toolbar";
 import InputText from "primevue/inputtext";
 import Sidebar from "primevue/sidebar";
 import Row from "primevue/row";
+import Dialog from "primevue/dialog";
+import Toast from "primevue/toast";
+import Dropdown from "primevue/dropdown";
+import Tag from "primevue/tag";
+import Card from "primevue/card";
+import ToastService from "primevue/toastservice";
 
 const app = createApp(App);
 
@@ -21,6 +27,8 @@ app.use(router);
 
 // PrimeVue Configuration
 app.use(PrimeVue, { ripple: true });
+
+app.use(ToastService);
 
 // PrimeVue Components
 app.component("pv-data-table", DataTable);
@@ -30,5 +38,11 @@ app.component("pv-toolbar", Toolbar);
 app.component("pv-input-text", InputText);
 app.component("pv-sidebar", Sidebar);
 app.component("pv-row", Row);
+app.component("pv-dialog", Dialog);
+app.component("pv-toast", Toast);
+app.component("pv-dropdown", Dropdown);
+app.component("pv-tag", Tag);
+app.component("pv-card", Card);
 
+// App mounting
 app.mount("#app");
