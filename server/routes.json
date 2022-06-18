@@ -1,4 +1,7 @@
 {
   "/api/v1/*": "/$1",
-  "/instructors/:instructorId/courses/:courseId": "/courses/:courseId"
+  "/instructors/:instructorId/courses/:courseId": "/courses/:courseId",
+  "/auth/*": "/$1",
+  "/sign-in": "/signin",
+  "/sign-up": "/signup"
 }

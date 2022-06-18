@@ -23,6 +23,16 @@ const router = createRouter({
       name: "tutorials",
       component: () => import("../learning/pages/tutorial-list.component.vue"),
     },
+    {
+      path: "/sign-in",
+      name: "sign-in",
+      component: () => import("../security/pages/sign-in.component.vue"),
+    },
+    {
+      path: "/sign-up",
+      name: "sign-up",
+      component: () => import("../security/pages/sign-up.component.vue"),
+    },
   ],
 });
 

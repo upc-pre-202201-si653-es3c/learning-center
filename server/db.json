@@ -93,5 +93,12 @@
       "courseId": 3,
       "topicId": 2
     }
+  ],
+  "users": [
+    {
+      "email": "john.doe@gmail.com",
+      "password": "$2a$10$Xg2MyfGBHa4jVCDhstENq.DRSEBLKbJDYJCR7y2zcWIIZ7P0H7maC",
+      "id": 1
+    }
   ]
 }
